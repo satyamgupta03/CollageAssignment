@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Traffic Light</title>
+<style>
+  body {
+    background-color: #232222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .traffic-light-container {
+    text-align: center;
+  }
+  .traffic-light-box {
+    background-color: black;
+    width: 140px;
+    padding: 20px 0;
+    border-radius: 20px 20px 0 0; /* rounded top corners only */
+    margin: 0 auto;
+  }
+  .light {
+    width: 80px;
+    height: 80px;
+    margin: 12px auto;
+    border-radius: 50%;
+  }
+  .red {
+    background-color: red;
+  }
+  .yellow {
+    background-color: yellow;
+  }
+  .green {
+    background-color: #3beb3b;
+  }
+  .pole {
+    width: 40px;
+    height: 180px;
+    background-color: #110f0f;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+  }
+  .pole-base {
+    width: 60px;
+    height: 50px;
+    background-color: #110f0f;
+    margin: -5px auto 0; 
+    border-radius: 0 0 12px 12px;
+  }
+</style>
+</head>
+<body>
+
+<div class="traffic-light-container">
+  <div class="traffic-light-box">
+    <div class="light red"></div>
+    <div class="light yellow"></div>
+    <div class="light green"></div>
+  </div>
+  <div class="pole"></div>
+  <div class="pole-base"></div>
+</div>
+
+</body>
+</html>
